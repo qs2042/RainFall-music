@@ -128,7 +128,8 @@ class QQMusic(MusicInterface):
 
 if __name__ == "__main__":
     music = QQMusic()
-    items = music.getSongInformation("单车")
+    items = music.getSongInformation("心急人上")
     print(items)
     for i in items:
         print(music.getSongDownload(i))
+        print(music.getSongDownload(i)["dlAudio"], "\n")
